@@ -28,7 +28,7 @@ import cucumber.api.java.Before;
 		};
 
 		static {
-			System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver.exe");
 			REAL_DRIVER = new ChromeDriver();
 			REAL_DRIVER.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			Runtime.getRuntime().addShutdownHook(CLOSE_THREAD);
